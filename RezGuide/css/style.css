@@ -25,37 +25,38 @@
 body{
 	font-family: Helvetica, Arial, sans-serif;
 }
+
 /* Header */
 #pageTitle{
 	padding-right: 10px;
-	margin:0px;
+	margin:0;
 }
 #titleDirectory{
-	color: #518d84;
+	color: #65666a;
 	font-size: 4.28em;
 	margin-top:-22px;
 	margin-bottom:-32px;
 	}
 #titleHeader
 {
-	color:#FFF;
+	color:#e31d1a;
 	font-size:3.46em;
 	margin-top: 78px;
-	padding-top: 0px;
-	margin-bottom: 0px;
+	padding-top: 0;
+	margin-bottom: 0;
 }
 #mainLogo img{
 	padding:20px 0;
 }
 header{
 	height:180px;
-	background-color:#74cabd;
+	background-color:#ebebeb;
 	position: fixed;
 	width: 100%;
-	top: 0px;
+	top: 0;
 }
 #titleHeaderSolo{
-	color:#FFF;
+	color:#65666a;
 	font-size:4.28em;
 	margin-top: 35px;
 	margin-bottom: 10px;
@@ -70,33 +71,35 @@ header{
 
 .mainContent
 {
-	height: 400px;
+	height: 100%;
 	width: 100%;
 	margin-top: 200px;
 	overflow: auto;
 }
-/* Main Page */
 
+/* Main Page */
 .iconRow{
 	margin-top:20px;
 	margin-bottom:15px;
 }
 .iconText{
-	color:#74cabd;
+	color:#65666a;
 	text-transform:uppercase;
 }
 .iconTextChat{
-	color:#74cabd;
+	color:#ebebeb;
 	font-size: 0.9em;
 	text-transform:uppercase;
 }
+
 /* Dashboard */
 .dashboardText{
 	margin-top:15px;
-	color:#74cabd;
+	color:#65666a;
 	font-size:2.5em;
 	text-transform:uppercase;
 }
+
 .dashboardRow{
 	margin-bottom:40px;
 }
@@ -111,6 +114,7 @@ header{
 	font-family: 'caviar_dreamsregular';
 	font-size: 0.8em;
 }
+
 /* Chat */
 #chat{
 	margin-top:25px;
@@ -118,7 +122,7 @@ header{
 #chatConversation{
 	height: 280px;
 	overflow:hidden;
-	border-bottom: 2px solid #74cabd;
+	border-bottom: 2px solid #ebebeb;
 	margin-bottom:20px;
 	
 }
@@ -143,13 +147,12 @@ header{
 	margin-bottom: 20px;
 }
 
-
 .chatScroll::-webkit-scrollbar {
       width: 12px;
 } /* this targets the default scrollbar (compulsory) */
 
 .chatScroll::-webkit-scrollbar-track {
-      background-color: #FFF;
+      background-color: #65666a;
 } /* the new scrollbar will have a flat appearance with the set background color */
  
 .chatScroll::-webkit-scrollbar-thumb {
@@ -158,7 +161,7 @@ header{
 } /* this will style the thumb, ignoring the track */
  
 .chatScroll::-webkit-scrollbar-button {
-      background-color: #FFF;
+      background-color: #65666a;
 } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
  
 .chatScroll::-webkit-scrollbar-corner {
@@ -180,19 +183,20 @@ header{
 }
 .userResponse, .operatorResponse{
 	padding:5px;
-	border-bottom: 2px solid #74cabd;
+	border-bottom: 2px solid #ebebeb;
 }
 .userResponse p, .operatorResponse p{
 	font-size:.95em;
 	margin-top:18px;
 }
 .chatUsersName{
-	color: #74cabd;
+	color: #ebebeb;
 	text-transform:uppercase;
 }
 #inputArea textarea{
 	margin-top:5px;
 }
+
 /* Calendar */
 #calendarMonth, #calendarYear, .monthSelector{
 	color:#74cabd;
@@ -253,7 +257,7 @@ header{
 }
 #calendarAccordion{
 	height:405px;
-
+	margin-top: 100px;
 }
 
 .dividerAccordion
@@ -262,8 +266,6 @@ header{
 	width: 100%x;
 	background-color: #b9e4de;
 }
-
-
 
 .dividerAccordionTop
 {
@@ -339,9 +341,7 @@ header{
 .event:hover{
 	cursor:pointer;
 }
-.ui-datepicker-title, .ui-datepicker-header, .ui-widget-header,.ui-datepicker-prev{
-	display:none;
-}
+
 .ui-datepicker-inline{
 	width:100%;
 	height:300px;
@@ -355,6 +355,11 @@ th {
     display: inline-block;
     text-align: center;
     line-height: 25px;
+}
+
+#calendarPage
+{
+	position: relative;
 }
 
 /* Login */
@@ -408,17 +413,17 @@ th {
 
 .profileNav
 {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 .profileNav2
 {
-	margin-top: 5px;
+	margin-top: 15px;
 	margin-left: -10px;
 }
 
 .profileNav3
 {
-	margin-top: 20px;
+	margin-top: 15rapx;
 	margin-left: -10px;
 }
 
@@ -482,6 +487,36 @@ th {
 	height: 2px;
 	width: 100%;
 	background-color: #74cabd;
+}
+
+.pointsNumber
+{
+	font-size: 9em;
+	color: #74cabd;
+	margin: auto;
+}
+
+.pointsCircle
+{
+	border: solid 7px #74cabd;
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+}
+
+.smallCircle
+{
+	border: solid 3px #74cabd;
+	height: 30px;
+	width: 30px;
+	border-radius: 100px;
+	padding: 3px;
+}
+
+.smallPoints
+{
+	font-size: 1.2em;
+	color: #74cabd;
 }
 
 #pointsScroll{
@@ -959,7 +994,7 @@ input[type="file"]{
 .accordionScroll{
 	width:625px;
 	height: 400px;
-	overflow: scroll;
+	overflow: auto;
 }
 .labelPush{
 	margin-left:15px;
